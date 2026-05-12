@@ -81,6 +81,8 @@ TVB,#genre#
 翡翠台4K,https://cdn6.163189.xyz/163189/fct4k
 翡翠台4K,http://r.jdshipin.com/n90gt
 翡翠台4K,http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct4
+翡翠台,http://mytv.cdn.loc.cc/o12.php?id=fct#isVideo=true##.m3u8
+翡翠台,http://o11.163189.xyz/stream/tvb/fct/#.m3u8
 翡翠台,http://cdn6.163189.xyz/163189/jade#.m3u8
 翡翠台,http://bxtv.3a.ink/api.php?id=fct
 翡翠台,http://r.jdshipin.com/qClQf
