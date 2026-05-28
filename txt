@@ -219,6 +219,45 @@ RTHKTV34,https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/master.m3
 RTHKTV35,https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/master.m3u8
 RTHKTV36,https://rthktv36-live.akamaized.net/hls/live/2112176/RTHKTV36/master.m3u8
 
+juli,#genre#
+翡翠台,http://r.jdshipin.com/qClQf
+翡翠台,http://r.jdshipin.com/qrfbg
+翡翠台,http://r.jdshipin.com/62WM7
+翡翠台,http://r.jdshipin.com/n90gt
+翡翠台,http://r.jdshipin.com/GeWKr
+明珠台,http://r.jdshipin.com/ZQ4kN
+明珠台,http://r.jdshipin.com/jUx8K
+TVB Plus,http://r.jdshipin.com/Nr5jq
+TVB Plus,http://r.jdshipin.com/ndGgS
+无线新闻,http://r.jdshipin.com/CkuBd
+TVB星河,http://r.jdshipin.com/sXuuD
+TVB星河,http://r.jdshipin.com/Voac4
+华丽翡翠台,http://r.jdshipin.com/thuYX
+华丽翡翠台,http://r.jdshipin.com/krMB5
+ViuTV,http://r.jdshipin.com/vSJvl
+ViuTV,http://r.jdshipin.com/TcKr2
+ViuTVsix,http://r.jdshipin.com/vFgDS
+Now新闻台,http://r.jdshipin.com/OeHMu
+HOY TV,http://r.jdshipin.com/sFw4S
+HOY资讯台,http://r.jdshipin.com/XIjta
+凤凰中文,http://r.jdshipin.com/cCCzW
+凤凰资讯,http://r.jdshipin.com/0Rp07
+凤凰香港,http://r.jdshipin.com/yDoTN
+凤凰香港,http://r.jdshipin.com/NfC0f
+澳视澳门,http://r.jdshipin.com/n2YZI
+澳视卫星,http://r.jdshipin.com/QFhCq
+澳门莲花,http://r.jdshipin.com/5DWJk
+重温经典,http://r.jdshipin.com/B7sfp
+广东珠江,http://r.jdshipin.com/sE5vO
+广东体育,http://r.jdshipin.com/LiYdg
+广州综合,http://r.jdshipin.com/iR6Gq
+广州综合,http://r.jdshipin.com/snhya
+广州南国都市,http://r.jdshipin.com/nWaZO
+广州南国都市,http://r.jdshipin.com/LvIQ4
+海峡卫视,http://r.jdshipin.com/WtYt3
+咪咕视频4K,http://r.jdshipin.com/ln4xk
+咪咕视频4K-2,http://r.jdshipin.com/Lqdwf
+
 电台,#genre#
 香港电台1台,https://rthkradio1-live.akamaized.net/hls/live/2035313/radio1/index_64_a.m3u8
 雷霆881,https://881.touch-u.fun/playlist.m3u8
