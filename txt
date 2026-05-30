@@ -268,6 +268,7 @@ CCTV9,https://cdn16.163189.xyz/163189/cctv9
 CCTV10,https://cdn16.163189.xyz/163189/cctv10
 CCTV11,https://cdn16.163189.xyz/163189/cctv11
 CCTV12,https://cdn16.163189.xyz/163189/cctv12
+CCTV13,https://cdn16.163189.xyz/163189/cctv13
 CCTV14,https://cdn16.163189.xyz/163189/cctv14
 CCTV15,https://cdn16.163189.xyz/163189/cctv15
 CCTV16,https://cdn16.163189.xyz/163189/cctv16
