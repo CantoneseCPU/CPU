@@ -78,6 +78,8 @@ Hoy78,https://test.tvbjack.ggff.net/proxy/450da474a5468d30#.m3u8
 
 TVB,#genre#
 翡翠台,http://mytv.cdn.loc.cc/o12.php?id=fct#isVideo=true##.m3u8
+翡翠台,http://120.198.86.186:9901/tsfile/live/1007_1.m3u8?key=txiptv
+翡翠台,http://fcasad.x3322.net:9901/tsfile/live/1007_1.m3u8?key=txiptv#isVideo=true#
 翡翠台,http://o11.163189.xyz/stream/tvb/fct/#.m3u8
 翡翠台,http://cdn6.163189.xyz/163189/jade#.m3u8
 翡翠台,http://bxtv.3a.ink/api.php?id=fct
@@ -91,6 +93,8 @@ TVB,#genre#
 翡翠台4K,http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct4
 翡翠台720p,http://cdn9.163189.xyz/smt1.1.php?id=jade_twn
 明珠台,http://r.jdshipin.com/ZQ4kN
+明珠台,http://120.198.86.186:9901/tsfile/live/1009_1.m3u8?key=txiptv
+明珠台,http://fcasad.x3322.net:9901/tsfile/live/1009_1.m3u8?key=txiptv#isVideo=true#
 明珠台,https://hls.168.us.kg/u/84/master.m3u8
 明珠台,http://r.jdshipin.com/jUx8K
 明珠台,http://php.jdshipin.com/TVOD/iptv.php?id=mzt2
