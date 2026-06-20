@@ -298,6 +298,7 @@ SmoothLounge,https://smoothjazz.cdnstream1.com/2586_320.mp3
 NoiseFM,http://play.sas-media.ru/play_256
 
 FIFA,#genre#
+Now618,http://jp.gxdx.org/relay_temp.php?t=d7d8765540246341cf6ade3d55d992df7bf3
 Now618,http://77.90.60.172:36633/3
 Now618,http://77.90.60.172:55555/4
 Now618,http://77.90.60.172:55555/3
