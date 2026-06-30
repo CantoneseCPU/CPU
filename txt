@@ -83,6 +83,7 @@ Hoy78,https://test.tvbjack.ggff.net/proxy/450da474a5468d30#.m3u8
 中天新闻,https://test.tvbjack.ggff.net/proxy/323c11c0b043e86e#.m3u8
 
 TVB,#genre#
+翡翠台,https://cdn.qd.je/163189.php?id=fct
 翡翠台,http://mytv.cdn.loc.cc/o12.php?id=fct
 翡翠台,http://push.cdn1.hls123.de:8080/streams/ef5addc0849/index.m3u8
 翡翠台,http://120.198.86.186:9901/tsfile/live/1007_1.m3u8?key=txiptv
@@ -187,6 +188,7 @@ TVB星河国语,https://cdn10.163189.xyz/stream/163189/xinghe/
 
 HK,#genre#
 爆谷台,http://8.218.84.3:8885/live/NlAhgdR475_p9pHeKE1G1rILoVl18Qqe36jUsiWqY5S26LQzNA-82o0LSiNo13OGcSHXdu4nvcSEs7ZwefDc7SyEixP0EIocYEK0qq3NjyIs57IqjnQHMpg7JRiFvldJFzidMT-2r5Q4-_N-9FgXvt5kAlAM1wAxkOreIVF1LbEHzTTI7cgj_d4TIjHbLwQBRRforSPXH4fs_JsZnJ6MfNW4VWr4apKEiQ279UsQi24hzU5NzAwtv6I6ivATQf2JNKkhSt3bxIT52MupLI66PQ.m3u8?u=1757123819
+ViuTV,https://cdn.qd.je/163189.php?id=viu
 ViuTV,http://push.cdn1.hls123.de:8080/streams/iewbjlpp9v/index.m3u8
 ViuTV,http://r.jdshipin.com/vSJvl
 ViuTV,https://hls.168.us.kg/u/99/master.m3u8
@@ -199,17 +201,21 @@ ViuTV720p,http://php.jdshipin.com/TVOD/iptv.php?id=viutv
 ViuTV720p,http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv
 ViuTV720p,http://php.jdshipin.com:8880/smt.php?id=viu1_twn
 ViuTV6,http://php.jdshipin.com:8880/smt.php?id=viusix_twn
+Hoy77,https://cdn.qd.je/163189.php?id=hoy
 Hoy77,http://push.cdn1.hls123.de:8080/streams/dguce4v9b69/index.m3u8
 Hoy77,http://r.jdshipin.com/sFw4S
 Hoy77,https://hls.168.us.kg/u/77/master.m3u8
 Hoy77,https://stream1.freetv.fun/7dc8bf470430004791ec5e7712e3eb2087cc07d7e8443a6b1843a59946a0fdcf.m3u8
 Hoy77,http://php.jdshipin.com/TVOD/iptv.php?id=hoytv
 Now Sports,http://74.91.26.218:82/live/nowbg.m3u8
+RTHK31,https://cdn.qd.je/163189.php?id=rthk31
 RTHK31,http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk31
 RTHK31,https://stream1.freetv.fun/a81da3fd66f335a20dea0f69a288eb2265d3ecba5d529e154b1429f9841c81d1.m3u8
+RTHK32,https://cdn.qd.je/163189.php?id=rthk32
 RTHK32,http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32
 RTHK32,https://stream1.freetv.fun/8c15a3ad248d22f171970a3b22dc7fe2d902bcad59980fbe45fab592f1b0e995.m3u8
 TVB娱乐新闻台,http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
+凤凰香港,https://cdn.qd.je/163189.php?id=fhhk
 PopC,http://bxtv.3a.ink/api.php?id=popc
 PopC,https://cdn4.skygo.mn/live/disk1/Popcorn/HLSv3-FTA/Popcorn.m3u8
 PopC,https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8
