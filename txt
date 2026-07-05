@@ -22,6 +22,7 @@ Hoy78,http://rihou.cc:555/tv/[Hk]有线新闻
 Hoy78,http://ma-yi.k.vu/mayi/697456c165396.php?id=hoycaijing_twn
 Hoy78,https://test.tvbjack.ggff.net/proxy/450da474a5468d30#.m3u8
 
+无线新闻,http://c.123.rr.kg/163189/wxxw#.m3u8
 无线新闻,http://cdn6.163189.xyz/163189/wxxw#.m3u8
 无线新闻,https://cdn.qd.je/163189.php?id=wxxw
 无线新闻,http://push.cdn1.hls123.de:8080/streams/n66wwnx3l7i/index.m3u8
