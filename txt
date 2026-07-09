@@ -10,6 +10,7 @@ Now新闻,https://live.catvod.com/iptv.php?id=nownews
 Now新闻,https://test.tvbjack.ggff.net/proxy/b9afaff2e8ad98c9#.m3u8
 
 Hoy78,https://cdn.qd.je/163189.php?id=hoy78
+Hoy78,http://120.234.44.98:18180/TV00000000000000000088@HHZT
 Hoy78,http://cdn.163189.xyz/163189/hoy78#.m3u8
 Hoy78,http://push.cdn1.hls123.de:8080/streams/xeblk620c0e/index.m3u8
 Hoy78,http://smt.1678520.xyz/smt3.2.3.php?id=hoycaijing_twn
@@ -24,6 +25,7 @@ Hoy78,http://ma-yi.k.vu/mayi/697456c165396.php?id=hoycaijing_twn
 Hoy78,https://test.tvbjack.ggff.net/proxy/450da474a5468d30#.m3u8
 
 无线新闻,https://cdn.qd.je/163189.php?id=wxxw
+无线新闻,http://120.234.44.98:18180/TV00000000000000000034@HHZT
 无线新闻,http://c.123.rr.kg/163189/wxxw#.m3u8
 无线新闻,http://cdn6.163189.xyz/163189/wxxw#.m3u8
 无线新闻,http://push.cdn1.hls123.de:8080/streams/n66wwnx3l7i/index.m3u8
