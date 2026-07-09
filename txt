@@ -333,6 +333,7 @@ BBC Earth,https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c6
 
 卡通,#genre#
 Lego,https://dh18i7whff86v.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-pslwq5nud9zg9/fc2273de-2ae1-4ed2-905d-739cf431eb30/0.m3u8
+Tom & Herry,https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
 
 儿童频道,#genre#
 金鹰卡通,http://58.57.40.22:9901/tsfile/live/1059_1.m3u8
