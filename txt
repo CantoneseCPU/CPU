@@ -196,6 +196,7 @@ TVB星河国语,https://cdn10.163189.xyz/stream/163189/xinghe/
 
 HK,#genre#
 爆谷台,http://8.218.84.3:8885/live/NlAhgdR475_p9pHeKE1G1rILoVl18Qqe36jUsiWqY5S26LQzNA-82o0LSiNo13OGcSHXdu4nvcSEs7ZwefDc7SyEixP0EIocYEK0qq3NjyIs57IqjnQHMpg7JRiFvldJFzidMT-2r5Q4-_N-9FgXvt5kAlAM1wAxkOreIVF1LbEHzTTI7cgj_d4TIjHbLwQBRRforSPXH4fs_JsZnJ6MfNW4VWr4apKEiQ279UsQi24hzU5NzAwtv6I6ivATQf2JNKkhSt3bxIT52MupLI66PQ.m3u8?u=1757123819
+ViuTV,http://120.234.44.98:18180/TV00000000000000000037@HHZT
 ViuTV,https://cdn.qd.je/163189.php?id=viu
 ViuTV,http://push.cdn1.hls123.de:8080/streams/iewbjlpp9v/index.m3u8
 ViuTV,http://r.jdshipin.com/vSJvl
