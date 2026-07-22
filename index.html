@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>流媒体播放器</title>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.11"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .header {
+      padding: 16px;
+      background: #1a1a1a;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    .header h1 {
+      margin: 0 0 12px 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .input-group {
+      display: flex;
+      gap: 8px;
+    }
+    #urlInput {
+      flex: 1;
+      padding: 10px 12px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      background: #0f0f0f;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+    }
+    #urlInput:focus {
+      border-color: #3b82f6;
+    }
+    button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      background: #3b82f6;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #2563eb;
+    }
+    button:active {
+      background: #1d4ed8;
+    }
+    .player-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+      position: relative;
+      overflow: hidden;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      background: #000;
+    }
+    .controls {
+      padding: 12px 16px;
+      background: #1a1a1a;
+      border-top: 1px solid #2a2a2a;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .controls select {
+      padding: 9px 10px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      background: #0f0f0f;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+    }
+    .status {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgba(255,255,255,0.8);
+      font-size: 14px;
+      text-align: center;
+      pointer-events: none;
+      display: none;
+    }
+    .player-container.landscape {
+      transform: rotate(90deg) scale(0.5625);
+    }
+    @media (min-width: 768px) {
+      .controls {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>流媒体播放器</h1>
+    <div class="input-group">
+      <input type="text" id="urlInput" placeholder="粘贴流媒体链接 (mp4 / m3u8 / mpd / webm ...)">
+      <button onclick="loadStream()">播放</button>
+    </div>
+  </div>
+
+  <div class="player-container" id="playerContainer">
+    <video id="video" controls playsinline preload="auto"></video>
+    <div class="status" id="status">请输入链接并点击播放</div>
+  </div>
+
+  <div class="controls">
+    <button onclick="togglePlay()">播放/暂停</button>
+    <button onclick="toggleFullscreen()">全屏/还原</button>
+    <button onclick="toggleOrientation()">横屏/竖屏</button>
+    <select id="speedSelect" onchange="changeSpeed(this.value)">
+      <option value="0.5">0.5x</option>
+      <option value="0.75">0.75x</option>
+      <option value="1" selected>1.0x</option>
+      <option value="1.25">1.25x</option>
+      <option value="1.5">1.5x</option>
+      <option value="2">2.0x</option>
+    </select>
+  </div>
+
+  <script>
+    const video = document.getElementById('video');
+    const urlInput = document.getElementById('urlInput');
+    const status = document.getElementById('status');
+    const playerContainer = document.getElementById('playerContainer');
+    let hls = null;
+    let isLandscape = false;
+
+    function showStatus(text) {
+      status.textContent = text;
+      status.style.display = text ? 'block' : 'none';
+    }
+
+    function destroyHls() {
+      if (hls) {
+        hls.destroy();
+        hls = null;
+      }
+    }
+
+    function loadStream() {
+      const url = urlInput.value.trim();
+      if (!url) {
+        showStatus('请先输入流媒体链接');
+        return;
+      }
+      showStatus('加载中...');
+      destroyHls();
+      video.src = '';
+
+      const ext = url.split('?')[0].split('.').pop().toLowerCase();
+      const isHls = ext === 'm3u8' || url.includes('m3u8');
+      const isDash = ext === 'mpd' || url.includes('mpd');
+
+      if (isHls && Hls.isSupported()) {
+        hls = new Hls();
+        hls.loadSource(url);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, function() {
+          showStatus('');
+          video.play().catch(() => {});
+        });
+        hls.on(Hls.Events.ERROR, function(event, data) {
+          if (data.fatal) {
+            showStatus('播放失败: ' + data.type);
+          }
+        });
+      } else if (isHls && video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = url;
+        video.addEventListener('loadedmetadata', () => {
+          showStatus('');
+          video.play().catch(() => {});
+        });
+      } else if (isDash && typeof dashjs !== 'undefined') {
+        const player = dashjs.MediaPlayer().create();
+        player.initialize(video, url, true);
+        showStatus('');
+      } else {
+        video.src = url;
+        video.play().catch(() => {});
+        showStatus('');
+      }
+    }
+
+    function togglePlay() {
+      if (video.paused) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    }
+
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        if (document.documentElement.requestFullscreen) {
+          document.documentElement.requestFullscreen().catch(() => {});
+        } else if (document.documentElement.webkitRequestFullscreen) {
+          document.documentElement.webkitRequestFullscreen();
+        }
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen().catch(() => {});
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        }
+      }
+    }
+
+    function toggleOrientation() {
+      isLandscape = !isLandscape;
+      if (isLandscape) {
+        playerContainer.classList.add('landscape');
+      } else {
+        playerContainer.classList.remove('landscape');
+      }
+      if (screen.orientation && screen.orientation.lock) {
+        screen.orientation.lock(isLandscape ? 'landscape' : 'portrait').catch(() => {});
+      }
+    }
+
+    function changeSpeed(speed) {
+      video.playbackRate = parseFloat(speed);
+    }
+
+    urlInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') loadStream();
+    });
+
+    video.addEventListener('waiting', () => showStatus('缓冲中...'));
+    video.addEventListener('playing', () => showStatus(''));
+    video.addEventListener('error', () => showStatus('视频加载失败，请检查链接'));
+
+    if (!urlInput.value) {
+      showStatus('请输入链接并点击播放');
+    }
+  </script>
+</body>
+</html>
